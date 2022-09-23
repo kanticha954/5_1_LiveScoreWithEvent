@@ -16,7 +16,7 @@ public class ScoreSource {
 	public ScoreSource() {
             listeners = new ArrayList<>();
 	}
-	public void setScore(int score) {
+	public void setScore(String score) {
             fireScoreEvent(new ScoreEvent(this, score)); //score ส่งให้ event
 	}
 	

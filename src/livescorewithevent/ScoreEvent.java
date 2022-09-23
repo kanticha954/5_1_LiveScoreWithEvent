@@ -11,12 +11,13 @@ import java.util.EventObject;
  * @author ASUS
  */
 public class ScoreEvent extends EventObject{
-    private int getScore;
-    public ScoreEvent(Object o, int score) {
+    private String getScore;
+    public ScoreEvent(Object o,String score) {
         super(o);
+        getScore = score;
     }
 
-    public int setScoreLine(){
+    public String setScoreLine(){
        
         return getScore;
     }

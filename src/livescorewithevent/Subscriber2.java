@@ -12,7 +12,7 @@ package livescorewithevent;
 public class Subscriber2 implements ScoreListener {
     @Override
     public void scoreChange(ScoreEvent e) {
-        System.out.println(e.setScoreLine()+" UAE");
+        System.out.println("live result:"+e.setScoreLine());
     }
     
 }

@@ -12,8 +12,8 @@ package livescorewithevent;
 public class Subscriber1 implements ScoreListener {
     @Override
     public void scoreChange(ScoreEvent e) {
-        System.out.print("Thai "+ 
-                e.setScoreLine()+"-");
+        System.out.println("live result:"+ 
+                e.setScoreLine());
     }
     
 }

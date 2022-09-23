@@ -24,25 +24,25 @@ public class LiveScoreWithEvent {
       
         source.addScoreListener(sub1);
         source.addScoreListener(sub2);
-        //source.setScore(1);
-        //source.setScore(2);
+        //source.setScore("Thai 1-0 UAE");
+        //source.setScore("Thai 4-0 UAE");
         
         Scanner sc = new Scanner(System.in);
-        int thai;
-        int uae;
-       
+        String score;
+        boolean x = true;
         while(true){
-            System.out.println("Enter score: ");
-            thai = sc.nextInt();
-            uae = sc.nextInt();
+            System.out.println("Enter Score: ");
+            score = sc.nextLine();
+            source.setScore(score);
+            source.setScore(score);
             
-            if(uae == 0 && thai == 0){
+            if(score==null){
                 break;
             }
-
-            source.setScore(thai);
-            source.setScore(uae);
-
+             
         }
+        
     }
 }
+    
+
